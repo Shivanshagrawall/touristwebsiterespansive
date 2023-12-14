@@ -1,0 +1,401 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    min-height: 90px;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.logo{
+    min-height: 60px;
+    width: 50%;
+    /*
+    border: 2px solid red;
+    */
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.navlist{
+    min-height: 60px;
+    width: 50%;
+    /*
+    border: 2px solid red;
+    */
+}
+.navlist ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.list li a{
+    text-decoration: none;
+    color: black;
+}
+.list li a:hover{
+    text-decoration: underline;
+    color: #f6d607;
+}
+.header{
+    min-height: 600px;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    background-image: url('young-woman-enjoying-beautiful-scenery.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.headertext{
+    font-size: 80px;
+    font-weight: 500px;
+    color: #fbda04;
+}
+.dateofbooking{
+    min-height: 50px;
+    min-width: 70%;
+    /*
+    border: 2px solid red;
+    */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+@media all and (max-width:600px) {
+    .dateofbooking{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.place{
+    min-height: 40px;
+    min-width: 45%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.date{
+    min-height: 40px;
+    min-width: 20%;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.book{
+    min-height: 40px;
+    min-width: 20%;
+    background-color: #fde02f;
+    border-radius: 10px;
+}
+.aboutus{
+    min-height: 600px;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about{
+    min-height: 200px;
+    min-width: 200px;
+    border: 1px solid #fde02f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+}
+.about img{
+    height: 100px;
+    width: 100px;
+}
+.about:hover{
+    box-shadow: 0px 0px 2px 5px yellow;
+}
+.places{
+    min-height: 1300px;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    padding: 20px;
+}
+.upperplaces{
+    min-height: 10%;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.upperplaces h4{
+    font-size: 18px;
+    color: #fde02f;
+}
+.upperplaces h2{
+    font-size: 48px;
+}
+
+.lowerplaces{
+    min-height: 90%;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    display: grid;
+    row-gap:20px;
+    column-gap: 40px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .lowerplaces {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Media Query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .lowerplaces {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+/*
+@media all and (min-height:900px){
+    .lowerplaces{
+        row-gap: 10px;
+        column-gap: 10px;
+        border: 2px solid green;;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+}
+*/
+.adventure{
+    /*
+    border: 2px solid red;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.adventure:hover{
+    box-shadow: 0px 0px 5px 5px #fde02f;
+}
+.adventure img{
+    height: 60%;
+    width: 100%;
+}
+.adventure h3{
+    font-size: 24px;
+    text-align: center;
+}
+.adventure h4{
+    font-size: 18px;
+}
+.card{
+    height:10%;
+    width: 80%;
+    background-color: #fde02f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px
+}
+.card p{
+    font-size: 20px;
+}
+.booknowbutton{
+    height: 7%;
+    width: 80%;
+    background-color: #f6d607;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.booknowbutton:hover{
+    background-color: #fde02f;
+}
+/* */
+.aboutcompany{
+    min-height: 600px;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.leftpart{
+    min-height: 540px;
+    width: 40%;
+    /*
+    border: 2px solid red;
+    */
+    box-shadow: 0px 0px 5px 5px grey;
+    background-image: url("outdoor.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+/*
+.leftpart img{
+    height: 100%;
+    width: 100%;
+}
+*/
+.rightpart{
+    min-height: 540px;
+    width: 40%;
+    /*
+    border: 2px solid red;
+    */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.rightpart h4{
+    color: #fde02f;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.rightpart h1{
+    margin-top: 25px;
+    font-size: 40px;
+}
+.rightpart p{
+    color: grey;
+    font-size: 20px;
+    margin-top: 35px;
+}
+.rightpart ul{
+    margin-top: 35px;
+}
+.rightpart ul li{
+    color: grey;
+    font-size: 20px;
+}
+.aboutus1{
+    height: 60px;
+    width: 150px;
+    color: rgb(33, 33, 225);
+    border-color: rgb(33, 33, 225);
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.aboutus1:hover{
+    background-color: rgb(232, 220, 220);
+}
+.footer{
+    min-height: 640px;
+    width: 100%;
+    /*
+    border: 2px solid red;
+    */
+    background-image: url('pine-tree.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footerpart{
+    height: 300px;
+    width: 25%;
+    /*
+    border: 2px solid red;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerpart h2{
+    margin-bottom: 50px;
+}
+.link>li>a{
+    text-decoration: none;
+    color: black;
+}
+.link>li>a:hover{
+    color: orangered;
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: auto; /* or adjust the height as needed */
+    }
+
+    .footerpart {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footerpart h2{
+        font-size: 28px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    .link>li>a{
+        font-size: 24px;
+    }
+}
+.footerlower{
+    min-height: 50px;
+    width: 100%;
+    background-color:#f6d607;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footerlower h1{
+    color: white;
+}
+
+
+
+
